@@ -1,0 +1,310 @@
+body {
+    background: #e0e0e0;
+    font-family: 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Hiragino Sans GB', 微软雅黑, 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif;
+  //  background: red;
+}
+.by-window {
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	a {
+		margin: 5px 0;
+    display: inline-block;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px; 
+    font-size: 16px;
+    color: #fff;
+    background: #00bfa5;
+    border-radius: 6px;
+    &:hover {
+    	background: #00796b;
+    }
+	}
+}
+.container {
+	position: relative;
+  margin: 10px auto;
+  width: 1060px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+ // background: black;
+  .sidebar {
+    position: absolute;
+    box-sizing: border-box;	
+    padding: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+  	font-size: 0;
+  	color: #fff;
+    background: #00bfa5;
+  	.photo {
+  		text-align: center;
+  		img {
+  			width: 120px;
+  			height: 160px;
+  		}
+  	}
+  	.basic-info {
+  		margin-top: 26px;
+  		text-align: center;
+	    font-size: 28px;
+	    font-weight: 400;
+  	}
+  	.other-info {
+  		margin-top: 20px;
+  		li {
+  			padding-top: 20px;
+  			&.demo-code {
+  				a {
+  					color: #fff;
+  					&:hover {
+  						color: #000;
+  						transition: all 0.3s;
+  					}
+  				}
+  			}
+  			dt {
+			    font-size: 18px;
+			    color: #9f3;
+			    i, span{
+			    	line-height: 40px;
+			    	vertical-align: top;
+			    }				
+  			}
+  			dd {
+  				margin-left: 18px;
+			    font-size: 14px;
+			    i, span{
+			    	line-height: 20px;
+			    	vertical-align: top;
+			    } 
+			    i {
+			    	margin-right: 2px;
+			    } 				    				
+  			}
+  		}
+  	}
+  }
+  .main {
+    position: relative;
+    box-sizing: border-box;	
+    padding: 20px 40px;
+    left: 300px;
+    width: 760px;
+    background: #f0f2f1;  	
+  	.education, .skill, .project {
+  		position: relative;
+  		margin-top: 10px;
+  		border-left: 4px solid #00796b;
+  		font-size: 0;
+  		&:after {
+  			content: '';
+  			position: absolute;
+  			left: -11px;
+  			bottom: 0;
+  			width: 20px;
+  			height: 20px;
+  			border-radius: 50%;
+  			background: #00796b;
+  		}
+	  	.title {
+		    font-size: 20px;
+		    font-weight: bold; 		
+		    color: #00796b;
+		    .icon {
+		    	display: inline-block;
+		    	margin-right: 10px;
+		    	margin-left: -20px;
+		    	text-align: center;
+		    	width: 40px;
+		    	height: 40px;
+		    	line-height: 40px;
+		    	border-radius: 50%;
+		    	color: #fff;
+		    	background: #00796b;
+		    }
+	  	} 
+	  	.sub-title {
+		    font-size: 16px;
+		    font-weight: bold; 		
+		    color: #fff;	  
+		    border-radius: 4px;
+		    background: #00796b;
+		    .icon {
+		    	display: inline-block;
+		    	margin-right: 10px;
+		    	margin-left: -28px;
+		    	text-align: center;
+		    	width: 24px;
+		    	height: 24px;
+		    	line-height: 24px;
+		    	border-radius: 50%;
+		    	color: #fff;
+		    	background: #00796b;
+		    }		    		
+	  	}
+	  	.description {
+	  		padding: 15px;
+		    line-height: 27px;
+		    font-size: 0;
+		    .icon {
+		    	margin-right: 6px;
+	    		font-size: 16px;		    	
+		    }
+	  	} 	  	 		
+  	}
+  	.education {
+	  	.description {
+		    .text {
+	  			font-size: 15px;		
+					em {
+						white-space: pre-wrap;
+			    	color: #000;
+		    		font-size: 16px;
+		    		font-weight: bold;
+		    		font-style: normal;
+					}	  				  	
+		    }
+		    .prize {
+					.icon-trophy {
+		  			display: inline-block;
+		  			vertical-align: top;
+		  			line-height: 25px;
+		    	}		    	
+		    	.text {
+		    		display: inline-block;
+		    		em {
+		    			vertical-align: top;
+		    		}
+		    		.block {
+		    			display: inline-block;
+		    		}
+		    	}
+		    }
+	  	}  		
+  	}
+  	.skill {
+	  	.description {
+		    .text {
+	  			font-size: 15px;
+	  			em {
+	  				color: #008080;
+	  				font-style: normal;
+	  				font-weight: bold;
+	  			}	    	
+		    }		
+	  	}	
+  	}  
+  	.project {
+      li.elm {
+        position: relative;
+      }
+      .QR-code {
+        position: absolute;
+        top: 38px;
+        left: -310px;
+        padding-right: 94px;
+        border-top: 2px solid #00bfa5;
+        &:after {
+          content: '<';
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
+          color: #fff;
+          background: #00796b;
+        }
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }            
+  		.content {
+  			.demo-code {
+  				font-size: 15px;
+          a {
+            color: #00796b;
+            &:first-child {
+              margin-right: 10px;
+            }
+          } 
+  				a:hover {
+  					color: #00bfa5;
+  					transition: all 0.3s;
+  				}
+  				em {
+  					font-style: normal;
+  					font-weight: bold;
+            color: #000;
+  				}
+  			}
+        .info {
+          line-height: 1.5em;
+          padding: 5px 0;
+          font-size: 15px;
+          text-indent: 2em;
+        }        
+  			.pics {
+  				margin-top: 10px;
+          text-align: center;
+	  			img {
+	  				margin-right: 10px;
+	  				&:last-child {
+	  					margin-right: 0;
+	  				}
+	  			}   				
+  			} 			
+  		}	
+  		.elm .content{
+  			img {
+  				width: 100px;
+	  			height: 160px;
+  			}
+  		}
+  		.yuewen .content{
+  			img {
+  				width: 200px;
+	  			height: 120px;
+  			}
+  		}  	
+      .cinema .content{
+        img {
+          width: 200px;
+          height: 120px;
+        }        
+      }	
+  		.resume .content{
+  			img {
+  				width: 200px;
+	  			height: 100px;
+  			}
+  		}  		
+  	}	    
+  }
+}
+
+
+
+.pdf {
+  .by-window {
+    display: none;
+  }
+  .container {
+    margin: 0;
+  }
+  .main .project .content .pics{
+    display: none;   
+  }  
+} 

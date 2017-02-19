@@ -1,0 +1,25 @@
+html, body {
+	font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.v-middle:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.clearfix:after {
+	display: block;
+	content: '.';
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.begin-bfc:before{
+	content: '';
+	display: table;
+}
+.end-bfc:after{
+	content: '';
+	display: table;
+}
